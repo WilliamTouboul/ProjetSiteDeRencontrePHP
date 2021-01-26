@@ -1,1 +1,35 @@
-/* style */
+.error {
+    color: red;
+}
+
+.inputDiv {
+    margin-top: 20px;
+}
+
+.inputText {
+    width: 100%;
+}
+
+#coupDeFoudre {
+    height: 70%;
+}
+
+#btnSubmit {
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+}
+
+#btnSubmit:hover {
+    background-color: red;
+    color: black;
+    text-align: center;
+}
+
+#footer {
+    background-color: grey;
+}
+
+ul {
+    list-style-type: none;
+}
