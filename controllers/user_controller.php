@@ -10,7 +10,6 @@ if (isset($_COOKIE['userLastname']) && isset($_COOKIE['userFirstname']) && isset
     $userDescription = $_COOKIE['userDescription'];
 } else {
     header('Location: ../index');
-
 }
 
 
@@ -19,10 +18,10 @@ if (isset($_POST['destroyButton'])) {
     setcookie('userFirstname', '', time() - 3600, '/');
     setcookie('userAge', '', time() - 3600, '/');
     setcookie('userMail', '', time() - 3600, '/');
+    setcookie('userPicture','',time()-3600,'/');
     setcookie('userGender', '', time() - 3600, '/');
     setcookie('userZipcode', '', time() - 3600, '/');
     setcookie('userSearching', '', time() - 3600, '/');
     setcookie('userDescription', '', time() - 3600, '/');
     header('Location: ../index');
-
 }

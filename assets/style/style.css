@@ -8,10 +8,13 @@
 
 body {
     font-family: 'Jose';
+    background-image: url('../img/backgroundParis.jpg');
+    height: 100vh;
+    background-attachment: fixed;   
 }
 
 .error {
-    color: red;
+    color: rgb(163, 31, 31);
 }
 
 .inputDiv {
@@ -29,35 +32,30 @@ body {
 }
 
 #btnSubmit:hover {
-    background-color: red;
+    background-color: rgb(163, 31, 31);
     color: black;
     text-align: center;
 }
 
 #footer {
-    background-color: rgb(209, 209, 209);
+    background-color:rgb(158, 158, 185);
 }
 
 ul {
     list-style-type: none;
 }
 
-body {
-    background-image: url('../img/backgroundVille.jpg');
-    opacity: 0.85;
-    height: 100vh;
-    background-attachment: fixed;
-}
+
 
 #bigTitle {
     text-decoration: none;
     text-align: left;
     color: rgb(255, 255, 255);
-    font-size: 160px;
+    font-size: 140px;
 }
 
 .red {
-    color: rgb(211, 22, 22);
+    color: rgb(163, 31, 31);
 }
 
 a {
@@ -71,6 +69,13 @@ a {
     color: white;
 }
 
+.profilColumn {
+    padding-left: 20%;
+    padding-right : 20%;
+    background-color : rgba(96, 96, 99, 0.7);
+    color : white;
+}
+
 
 #userMainPage {
     height: 100vh;
@@ -79,7 +84,7 @@ a {
 
 #destroyButton,
 #meeticButton {
-    background-color: red;
+    background-color: rgb(163, 31, 31);
     color: black;
     height: 80px;
     width: 180px;
@@ -99,29 +104,58 @@ a {
 }
 
 #btndiscut {
-    background-color: red;
+    background-color: rgb(163, 31, 31);
     margin-left: 40px;
 }
 
 #btnlike {
-    background-color: red;
+    background-color: rgb(163, 31, 31);
     margin-left: 30px;
 }
-
-#nav2 {
-    float: right;
-}
-
-#btnmessage,
-#btnprofile {
-    background-color: red;
+#btnmessage,#btnprofile{
+    background-color: rgb(163, 31, 31);
+    margin-right: 30px;
 }
 
 #btnprofile {
-    background-color: red;
+    background-color: rgb(163, 31, 31);
+    margin-right: 30px;
 }
 
 #btndeconex {
-    background-color: red;
+    background-color: rgb(163, 31, 31);
+    margin-right: 182px;
     ;
+}
+#idnav{
+    background-color:rgb(158, 158, 185);
+  padding-top: 0px;
+  padding-bottom: 0px;
+ 
+}
+.navbar-brand{
+    text-decoration: none;
+    margin-left: 120px;
+    color: white;
+}
+#infolover{
+    margin-top: 18px;
+    margin-left: 120px;
+    font-size: xx-large;
+    color: white;
+}
+
+#meeticButton, #meeticLink {
+    text-decoration : none;
+    color : black;
+}
+
+.userLineTitle {
+    text-align: left;
+    font-style : italic;
+    font-size : 20px;
+}
+.userLineInfo {
+    text-align : right;
+    font-size : 20px;
 }

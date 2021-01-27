@@ -80,6 +80,7 @@ if (isset($_POST['submitButton'])) {
     if (empty($_POST['searching'])) {
         $searchingError = $errorMessage;
         $e++;
+
     } else {
         setcookie('userSearching', $_POST['searching'], time() + 86400);
     }
