@@ -132,7 +132,6 @@
                     </div>
                     <div class="justify-content-center">
                         <!-- Bouton -->
-
                         <div class="container">
                             <div class="row">
                                 <div class="col text-center">
