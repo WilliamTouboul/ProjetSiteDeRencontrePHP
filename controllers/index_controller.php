@@ -89,6 +89,7 @@ if (isset($_POST['submitButton'])) {
         $mimetype = mime_content_type($_FILES['picture']['tmp_name']);
         if (in_array($mimetype, array('image/jpeg', 'image/png'))) {
             move_uploaded_file($_FILES['picture']['tmp_name'], $uploaddir . $_FILES['picture']['name']);
+            setcookie('userPicture', $uploadfile, time()+86400); // -----
         } else {
             $pictureError = $errorMessage;
         }
