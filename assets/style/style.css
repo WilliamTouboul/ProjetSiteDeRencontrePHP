@@ -74,3 +74,28 @@ a {
     background-color: rgba(96, 96, 99, 0.4);
     color : white;
 }
+#labelmessage{
+    margin-left: 20px;
+}
+#btndiscut{
+    background-color: red;
+    margin-left: 40px;
+}
+#btnlike{
+background-color: red;
+margin-left: 30px;
+}
+#nav2{
+    float: right;
+}
+
+#btnmessage,#btnprofile{
+    background-color: red;
+}
+#btnprofile{
+    background-color: red;
+}
+#btndeconex{
+    background-color: red;
+    ;
+}
