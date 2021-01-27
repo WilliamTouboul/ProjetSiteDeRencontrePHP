@@ -17,11 +17,11 @@
 
     <section id="headerHome">
         <div>
-            <a href="#indexTitle" id="bigTitle"><span class="red">M</span>eet <br><span class="red">M</span>e 
-            <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="62" height="62" viewBox="0 0 24 24">
-                        <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
-                    </svg>
-                    <br> <span class="red">H</span>alfway</a>
+            <a href="#indexTitle" id="bigTitle"><span class="red">M</span>eet <br><span class="red">M</span>e
+                <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="62" height="62" viewBox="0 0 24 24">
+                    <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                </svg>
+                <br> <span class="red">H</span>alfway</a>
         </div>
     </section>
 
@@ -32,7 +32,7 @@
 
     <div class="container" data-aos="fade-left">
         <div class="row">
-            <div class="col-md-12 inscriptionColumn" >
+            <div class="col-md-12 inscriptionColumn">
                 <h1 class="text-center" id="indexTitle"> <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="36" height="36" viewBox="0 0 24 24">
                         <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
                     </svg>
@@ -41,22 +41,29 @@
                         <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
                     </svg>
                 </h1>
+                <!-- FORM -->
                 <form method="POST" enctype="multipart/form-data" id="form">
                     <!-- Nom -->
                     <label for="lastname">Nom :</label>
-                    <input class="rounded inputText" type="text" name="lastname" id="lastname" placeholder="Martin">
+                    <input class="rounded inputText" type="text" name="lastname" id="lastname" placeholder="Doe" value="<?php if (isset($_POST['lastname'])) {
+                                                                                                                            echo $_POST['lastname'];
+                                                                                                                        }  ?>">
                     <span class="error"> <?= $lastnameError; ?> </span>
 
                     <!-- Prénom -->
                     <div class="inputDiv">
                         <label for="firstname">Prénom : </label>
-                        <input class="rounded inputText" type="text" name="firstname" id="firstname" placeholder="Jean-Mich">
+                        <input class="rounded inputText" type="text" name="firstname" id="firstname" placeholder="John" value="<?php if (isset($_POST['firstname'])) {
+                                                                                                                                    echo $_POST['firstname'];
+                                                                                                                                }  ?>">
                         <span class="error"> <?= $firstnameError; ?> </span>
                     </div>
                     <!-- Age -->
                     <div class="inputDiv">
                         <label for="age">Age :</label>
-                        <input class="rounded inputText" type="text" name="age" id="age" placeholder="87">
+                        <input class="rounded inputText" type="text" name="age" id="age" placeholder="25" value="<?php if (isset($_POST['age'])) {
+                                                                                                                        echo $_POST['age'];
+                                                                                                                    }  ?>">
                         <span class="error"> <?= $ageError; ?> </span>
                     </div>
                     <!-- Genre -->
@@ -74,14 +81,18 @@
                     <!-- Code Postal -->
                     <div class="inputDiv">
                         <label for="zipcode">Code Postal : </label>
-                        <input class="rounded inputText" type="text" name="zipcode" id="zipcode" placeholder="75000">
+                        <input class="rounded inputText" type="text" name="zipcode" id="zipcode" placeholder="75000" value="<?php if (isset($_POST['zipcode'])) {
+                                                                                                                                echo $_POST['zipcode'];
+                                                                                                                            }  ?>">
                         <span class="error"> <?= $zipcodeError; ?> </span>
                     </div>
 
                     <!-- Adresse Mail -->
                     <div class="inputDiv">
                         <label for="mail">Adresse Mail :</label>
-                        <input class="rounded inputText" type="email" name="mail" id="mail" placeholder="JeanMichMartin@gmail.com">
+                        <input class="rounded inputText" type="email" name="mail" id="mail" placeholder="JeanMichMartin@gmail.com" value="<?php if (isset($_POST['mail'])) {
+                                                                                                                                                echo $_POST['mail'];
+                                                                                                                                            }  ?>">
                         <span class="error"> <?= $mailError; ?> </span>
                     </div>
 
@@ -106,7 +117,10 @@
                     <!-- Description -->
                     <div class="inputDiv">
                         <label for="description">Description : </label>
-                        <input type="text" class="rounded inputText" name="description" id="description" rows="5" cols="45"></input>
+                        <input type="text" class="rounded inputText" name="description" id="description" value="<?php if (isset($_POST['description'])) {
+                                                                                                                    echo $_POST['description'];
+                                                                                                                }  ?>">
+                        </input>
                         <span class="error"> <?= $descriptionError; ?> </span>
                     </div>
 
@@ -129,9 +143,6 @@
                     </div>
                 </form>
             </div>
-            <!-- <div class="col-md-6 text-center">
-                <img src="assets/img/coupDeFoudre2.png" id="coupDeFoudre">
-            </div> -->
         </div>
     </div>
 
