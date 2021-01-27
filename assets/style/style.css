@@ -77,11 +77,12 @@ a {
     padding-top: 85px;
 }
 
-#destroyButton, #meeticButton {
+#destroyButton,
+#meeticButton {
     background-color: red;
-    color : black;
-    height : 80px;
-    width : 180px;
+    color: black;
+    height: 80px;
+    width: 180px;
 }
 
 .buttonContainer {
@@ -92,29 +93,35 @@ a {
 
 
 }
-    
-#labelmessage{
+
+#labelmessage {
     margin-left: 20px;
 }
-#btndiscut{
+
+#btndiscut {
     background-color: red;
     margin-left: 40px;
 }
-#btnlike{
-background-color: red;
-margin-left: 30px;
+
+#btnlike {
+    background-color: red;
+    margin-left: 30px;
 }
-#nav2{
+
+#nav2 {
     float: right;
 }
 
-#btnmessage,#btnprofile{
+#btnmessage,
+#btnprofile {
     background-color: red;
 }
-#btnprofile{
+
+#btnprofile {
     background-color: red;
 }
-#btndeconex{
+
+#btndeconex {
     background-color: red;
     ;
 }

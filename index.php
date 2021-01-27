@@ -1,3 +1,4 @@
+<?php include('controllers/index_controller.php'); ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -13,7 +14,7 @@
 <body>
 
 
-    <?php include('controllers/index_controller.php'); ?>
+
 
     <section id="headerHome">
         <div>

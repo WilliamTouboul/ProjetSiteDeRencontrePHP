@@ -12,7 +12,7 @@
 
 <body>
     <?php include('../controllers/user_controller.php'); ?>
-    
+
     <div class="container inscriptionColumn" id="userMainPage">
         <div class="row">
             <div class="col-md-12 text-justify justify-content-center">

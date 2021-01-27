@@ -22,7 +22,7 @@ include("controllers\lovers_controller.php");
                 <br> <span class="red">H</span>alfway</a>
             </a>
 
-            <ul id="nav2" class="navbar-nav me-auto mb-2 mb-lg-0  ">
+            <ul id="nav2" class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li> <button id="btnmessage" type="button" class="btn btn-danger position-relative">
                         MESSAGES ! <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+13 <span class="visually-hidden">unread messages</span></span>
                     </button></li>
