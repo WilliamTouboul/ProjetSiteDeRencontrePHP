@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,25 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="/assets/style/style.css" rel="stylesheet">
     <title>Inscription</title>
 </head>
 
 <body>
+
+
     <?php include('controllers/index_controller.php'); ?>
 
-    <h1 class="text-center" id="indexTitle"> <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="36" height="36" viewBox="0 0 24 24">
-            <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
-        </svg>
-        BIENVENUE JEUNE LOVER
-        <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="36" height="36" viewBox="0 0 24 24">
-            <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
-        </svg>
-    </h1>
+    <section id="headerHome">
+        <div>
+            <a href="#indexTitle" id="bigTitle"><span class="red">M</span>eet <br><span class="red">M</span>e 
+            <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="62" height="62" viewBox="0 0 24 24">
+                        <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                    </svg>
+                    <br> <span class="red">H</span>alfway</a>
+        </div>
+    </section>
 
-    <div class="container">
+
+    <div class="100vh" id="header">
+
+    </div>
+
+    <div class="container" data-aos="fade-left">
         <div class="row">
-            <div class="col-md-6 inscriptionColumn">
+            <div class="col-md-12 inscriptionColumn" >
+                <h1 class="text-center" id="indexTitle"> <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="36" height="36" viewBox="0 0 24 24">
+                        <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                    </svg>
+                    BIENVENUE JEUNE LOVER
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="36" height="36" viewBox="0 0 24 24">
+                        <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                    </svg>
+                </h1>
                 <form method="POST" enctype="multipart/form-data" id="form">
                     <!-- Nom -->
                     <label for="lastname">Nom :</label>
@@ -113,13 +129,19 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-6 text-center">
+            <!-- <div class="col-md-6 text-center">
                 <img src="assets/img/coupDeFoudre2.png" id="coupDeFoudre">
-            </div>
+            </div> -->
         </div>
     </div>
 
+
     <?php include("views/footer.php"); ?>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

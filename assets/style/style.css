@@ -1,10 +1,21 @@
+/* FONT */
+@font-face {
+    font-family: 'Jose';
+    src: url('../fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Jose';
+}
 
 .error {
     color: red;
 }
 
 .inputDiv {
-    margin-top: 20px;
+    margin-top: 14px;
 }
 
 .inputText {
@@ -28,9 +39,38 @@
 }
 
 #footer {
-    background-color: grey;
+    background-color: rgb(209, 209, 209);
 }
 
 ul {
     list-style-type: none;
+}
+
+body {
+    background-image: url('../img/backgroundVille.jpg');
+    opacity: 0.85;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+#bigTitle {
+    text-decoration: none;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 160px;
+}
+
+.red {
+    color: rgb(211, 22, 22);
+}
+
+a {
+    text-decoration: none;
+}
+
+.inscriptionColumn {
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgba(96, 96, 99, 0.4);
+    color : white;
 }
