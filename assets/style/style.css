@@ -104,17 +104,33 @@ a {
 background-color: red;
 margin-left: 30px;
 }
-#nav2{
-    float: right;
-}
-
 #btnmessage,#btnprofile{
     background-color: red;
+    margin-right: 30px;
 }
 #btnprofile{
     background-color: red;
+    margin-right: 30px;
 }
 #btndeconex{
     background-color: red;
+    margin-right: 182px;
     ;
+}
+#idnav{
+    background-color:rgba(138, 138, 204, 0.4);
+  padding-top: 0px;
+  padding-bottom: 0px;
+ 
+}
+.navbar-brand{
+    text-decoration: none;
+    margin-left: 120px;
+    color: white;
+}
+#infolover{
+    margin-top: 18px;
+    margin-left: 120px;
+    font-size: xx-large;
+    color: white;
 }

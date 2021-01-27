@@ -13,34 +13,38 @@ include("controllers\lovers_controller.php");
 </head>
 
 <body>
-    <section>
-        <nav class="navbar" class="navbar  navbar-expand-lg  ">
-            <a class="navbar-brand" href="#"><span class="red">M</span>eet <br><span class="red">M</span>e
-                <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="62" height="62" viewBox="0 0 24 24">
+<nav id="idnav"class="navbar  navbar-expand-lg d-flex justify-content-end sticky-top">
+            <a class="navbar-brand" href="index.php"><span class="red">M</span>eet <br><span class="red">M</span>e
+                <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="30" height="30" viewBox="0 0 24 24">
                     <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
                 </svg>
                 <br> <span class="red">H</span>alfway</a>
             </a>
-
-            <ul id="nav2" class="navbar-nav me-auto mb-2 mb-lg-0  ">
+<p id="infolover"> Hello ! <?= $_COOKIE['userLastname'].' '. $_COOKIE['userFirstname'] ?></p>
+            <ul id="nav2" class="navbar-nav ms-auto mb-2 mb-lg-0  ">
                 <li> <button id="btnmessage" type="button" class="btn btn-danger position-relative">
                         MESSAGES ! <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+13 <span class="visually-hidden">unread messages</span></span>
                     </button></li>
-                <li>
+                <li><a href="\views\user.php">
                     <button id="btnprofile" type="button" class="btn btn-danger">Profile</button>
-                </li>
-                <li><button id="btndeconex" type="button" class="btn btn-danger">Deconnection</button>
+               </a> </li>
+                <li><form method="POST">
+                    <button type="submit" id="btndeconex" name="btndeconex" class="btn btn-danger">Destroy</button>
+                </form>
                 </li>
             </ul>
 
             </div>
         </nav>
-    </section>
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <?php
             // le person c'est le compteur et infos c'est la ligne avec la liste des informations
             foreach ($TabLovers as $person => $information) {
+                  $gendercherch=($_COOKIE['userSearching']);
+                  if($information['gender']== $gendercherch){
+
+                 
                 $fsname = $information['firstname'];
                 $lstname = $information['lastname'];
                 $desc = $information['description'];
@@ -83,8 +87,10 @@ include("controllers\lovers_controller.php");
                         </div>
                     </div>
                 </div>
-            <?php
+            
+          <?php   
             }
+        }
             ?>
 
         </div>

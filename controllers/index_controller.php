@@ -70,6 +70,7 @@ if (isset($_POST['submitButton'])) {
     //verif Searching
     if (empty($_POST['searching'])) {
         $searchingError = $errorMessage;
+
     } else {
         setcookie('userSearching', $_POST['searching'], time() + 86400);
     }
@@ -96,9 +97,8 @@ if (isset($_POST['submitButton'])) {
     }
 
     if(isset($_COOKIE['userLastname']) && isset($_COOKIE['userFirstname']) && isset($_COOKIE['userAge']) && isset($_COOKIE['userGender']) && isset($_COOKIE['userZipcode']) && isset($_COOKIE['userMail']) && isset($_COOKIE['userSearching']) && isset($_COOKIE['userDescription'])) {
-        header('Location: http://projetphpsiterencontre/views/user');
+    
+        header('Location: http://projetsitederencontre/lover.php');
         exit();
-    } else {
-        header('Location: http://projetphpsiterencontre/index#indexTitle');
-    }
+    } 
 }

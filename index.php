@@ -42,7 +42,7 @@
                     </svg>
                 </h1>
                 <!-- FORM -->
-                <form method="POST" enctype="multipart/form-data" id="form">
+                <form method="POST" enctype="multipart/form-data" id="form" >
                     <!-- Nom -->
                     <label for="lastname">Nom :</label>
                     <input class="rounded inputText" type="text" name="lastname" id="lastname" placeholder="Doe" value="<?php if (isset($_POST['lastname'])) {
@@ -100,20 +100,18 @@
                     <div class="inputDiv">
                         <label for="searching">Vous recherchez : </label>
                         <div>
-                            <span>
-                                <input type="checkbox" name="searching" id="homme" value="homme">
-                                <label for="searching">Homme</label>
-                            </span>
-
-                            <span>
-                                <input type="checkbox" name="searching" id="femme" value="femme">
-                                <label for="searching">Femme</label>
-                            </span>
+                            <div>
+                                <input type="radio" id="searching" name="searching" value="homme" checked>
+                                <label for="homme">Homme</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="searching" name="searching" value="femme" checked>
+                                <label for="femme">Femme</label>
+                            </div>
                         </div>
                         <span class="error"> <?= $searchingError; ?> </span>
 
                     </div>
-
                     <!-- Description -->
                     <div class="inputDiv">
                         <label for="description">Description : </label>
