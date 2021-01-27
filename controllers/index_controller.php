@@ -18,11 +18,16 @@ function CheckInput($regex, $posted) // Fonction pour verifier les champs
         return TRUE;
     }
 }
-// if (isset($_COOKIE['userLastname']) && isset($_COOKIE['userFirstname']) && isset($_COOKIE['userAge']) && isset($_COOKIE['userGender']) && isset($_COOKIE['userZipcode']) && isset($_COOKIE['userMail']) && isset($_COOKIE['userSearching']) && isset($_COOKIE['userDescription'])) {
-//     
-// } else {
+if (isset($_COOKIE['userLastname']) && isset($_COOKIE['userFirstname']) 
+&& isset($_COOKIE['userAge']) && isset($_COOKIE['userGender']) && isset($_COOKIE['userZipcode']) 
+&& isset($_COOKIE['userMail']) && isset($_COOKIE['userSearching']) && isset($_COOKIE['userDescription'])) 
+{
+header('Location: http://projetphpsiterencontre/views/lovers.php');
+}
 
+// Quand le form est submit :
 if (isset($_POST['submitButton'])) {
+    // compteur d'erreur
     $e = 0;
     // Verif Nom
     if (CheckInput($regexName, $_POST['lastname'])) {
@@ -80,7 +85,6 @@ if (isset($_POST['submitButton'])) {
     if (empty($_POST['searching'])) {
         $searchingError = $errorMessage;
         $e++;
-
     } else {
         setcookie('userSearching', $_POST['searching'], time() + 86400);
     }
@@ -108,8 +112,22 @@ if (isset($_POST['submitButton'])) {
             $e++;
         }
     }
+    // si le compteur d'erreur est nulle, on redirige vers Lover. 
     if ($e == 0) {
-        header('Location: http://projetphpsiterencontre/lover');
-        //     exit();
+        header('Location: http://projetphpsiterencontre/views/lovers');
     }
+}
+
+// Bouton deconnexion navbar 
+if (isset($_POST['btndeconex'])) {
+    setcookie('userLastname', '', time() - 3600, '/');
+    setcookie('userFirstname', '', time() - 3600, '/');
+    setcookie('userAge', '', time() - 3600, '/');
+    setcookie('userMail', '', time() - 3600, '/');
+    setcookie('userGender', '', time() - 3600, '/');
+    setcookie('userPicture', '', time() - 3600, '/');
+    setcookie('userZipcode', '', time() - 3600, '/');
+    setcookie('userSearching', '', time() - 3600, '/');
+    setcookie('userDescription', '', time() - 3600, '/');
+    header('Location: ../index');
 }

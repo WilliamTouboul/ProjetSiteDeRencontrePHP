@@ -14,31 +14,30 @@
 <body>
 
     <nav id="idnav" class="navbar  navbar-expand-lg d-flex justify-content-end sticky-top">
-        <a class="navbar-brand" href="index.php"><span class="red">M</span>eet <br><span class="red">M</span>e
-            <svg xmlns="http://www.w3.org/2000/svg" fill="red" width="30" height="30" viewBox="0 0 24 24">
-                <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
-            </svg>
-            <br> <span class="red">H</span>alfway</a>
-        </a>
-
-        <ul id="nav2" class="navbar-nav ms-auto mb-2 mb-lg-0  ">
-            <li> <button id="btnmessage" type="button" class="btn btn-danger position-relative">
-                    MESSAGES ! <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+13 <span class="visually-hidden">unread messages</span></span>
-                </button></li>
-            <li><a href="\views\user.php">
-                    <button id="btnprofile" type="button" class="btn btn-danger">Profile</button>
-                </a> </li>
-            <?php
-            if (isset($_COOKIE['userLastname']) && isset($_COOKIE['userFirstname']) && isset($_COOKIE['userAge']) && isset($_COOKIE['userGender']) && isset($_COOKIE['userZipcode']) && isset($_COOKIE['userMail']) && isset($_COOKIE['userSearching']) && isset($_COOKIE['userDescription'])) {
-            ?>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand" href="index.php"><span class="red">M</span>eet <br><span class="red">M</span>e
+                <svg xmlns="http://www.w3.org/2000/svg" fill="rgb(163, 31, 31)" width="30" height="30" viewBox="0 0 24 24">
+                    <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                </svg>
+                <br> <span class="red">H</span>alfway</a>
+            </a>
+            <p id="infolover"> Hello ! </p>
+            <ul id="nav2" class="navbar-nav ms-auto mb-2 mb-lg-0  ">
+                <li> <button id="btnmessage" type="button" class="btn btn-danger position-relative">
+                        Message(s)<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+13 <span class="visually-hidden">unread messages</span></span>
+                    </button></li>
+                <li><a href="\views\user.php">
+                        <button id="btnprofile" type="button" class="btn btn-danger">Votre profil</button>
+                    </a> </li>
                 <li>
                     <form method="POST">
-                        <button type="submit" id="btndeconex" name="btndeconex" class="btn btn-danger">Destroy</button>
+                        <button type="submit" id="btndeconex" name="btndeconex" class="btn btn-danger">Déconnexion</button>
                     </form>
                 </li>
-            <?php } ?>
-        </ul>
-
+            </ul>
         </div>
     </nav>
 
@@ -178,5 +177,9 @@
         AOS.init();
     </script>
 </body>
+<script src="assets/js/script.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
 
 </html>
