@@ -101,18 +101,16 @@
                     <div class="inputDiv">
                         <label for="searching">Vous recherchez : </label>
                         <div>
-                            <span>
-                                <input type="checkbox" name="searching" id="homme" value="homme">
-                                <label for="searching">Homme</label>
-                            </span>
-
-                            <span>
-                                <input type="checkbox" name="searching" id="femme" value="femme">
-                                <label for="searching">Femme</label>
-                            </span>
+                            <div>
+                                <input type="radio" id="searching" name="searching" value="homme" checked>
+                                <label for="homme">Homme</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="searching" name="searching" value="femme" checked>
+                                <label for="femme">Femme</label>
+                            </div>
                         </div>
                         <span class="error"> <?= $searchingError; ?> </span>
-
                     </div>
 
                     <!-- Description -->

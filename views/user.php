@@ -1,3 +1,5 @@
+<?php include('../controllers/user_controller.php'); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,7 +13,6 @@
 </head>
 
 <body>
-    <?php include('../controllers/user_controller.php'); ?>
 
     <div class="container inscriptionColumn" id="userMainPage">
         <div class="row">
@@ -37,16 +38,12 @@
                 </form>
             </div>
             <div class="col-md-6 buttonContainer">
-                <form>
+                <form action="https://www.meetic.fr/">
                     <button type="button" id="meeticButton" name="meeticButton" class="btn userBtn">Meetic</button>
-
                 </form>
             </div>
         </div>
     </div>
-
-
-
 
     <?php include("footer.php"); ?>
 
