@@ -15,7 +15,7 @@
 
     <section id="headerHome">
         <div>
-            <a href="#indexTitle" id="bigTitle"><span class="red">M</span>eet  <span id="inlineMedia"> <br> </span> <span class="red">M</span>e
+            <a href="#indexTitle" id="bigTitle"><span class="red">M</span>eet <span id="inlineMedia"> <br> </span> <span class="red">M</span>e
                 <svg id="bigTitleHeart" xmlns="http://www.w3.org/2000/svg" fill="red" width="62" height="62" viewBox="0 0 24 24">
                     <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
                 </svg>
@@ -151,6 +151,8 @@
     </script>
 </body>
 <script src="assets/js/script.js"> </script>
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 

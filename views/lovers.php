@@ -18,13 +18,15 @@ include("..\controllers\lovers_controller.php");
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
             <a class="navbar-brand" href="../index.php"><span class="red">M</span>eet <br><span class="red">M</span>e
                 <svg xmlns="http://www.w3.org/2000/svg" fill="rgb(163, 31, 31)" width="30" height="30" viewBox="0 0 24 24">
                     <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
                 </svg>
                 <br> <span class="red">H</span>alfway</a>
             </a>
-            <p id="infolover"> Hello ! <?= $_COOKIE['userFirstname'] ?></p>
+         
+            <p id="infolover"> <span id="inlineMedia"> Hello ! <?= $_COOKIE['userFirstname'] ?></span></p>
             <ul id="nav2" class="navbar-nav ms-auto mb-2 mb-lg-0  ">
                 <li> <button id="btnmessage" type="button" class="btn btn-danger position-relative">
                         Message(s)<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+13 <span class="visually-hidden">unread messages</span></span>
@@ -33,15 +35,17 @@ include("..\controllers\lovers_controller.php");
                         <button id="btnprofile" type="button" class="btn btn-danger">Votre profil</button>
                     </a> </li>
                 <li>
+                <span id="inlineMedia">
                     <form method="POST">
                         <button type="submit" id="btndeconex" name="btndeconex" class="btn btn-danger">Déconnexion</button>
                     </form>
+                    </span>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="container mx-auto">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4">
             <?php
             // le person c'est le compteur et infos c'est la ligne avec la liste des informations
             
@@ -58,7 +62,7 @@ include("..\controllers\lovers_controller.php");
             ?>
                     <div class="col ">
                         
-                        <div class="card" style="width: 18rem;">
+                        <div class="card mx-auto" style="width: 18rem;">
                             <img src=<?php echo $information['picture'];  ?> height="300" class="card-img-top" alt=<?= "$fsname   $lstname;" ?>>
                             <div class="card-body">
                                 <h5 class="card-title"> <?= $fsname . " " .$lstname ; ?> </h5>
@@ -103,7 +107,6 @@ include("..\controllers\lovers_controller.php");
     </div>
 
     <?php include("footer.php"); ?>
-
 </body>
 <script src="../assets/js/script.js"> </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
