@@ -211,6 +211,7 @@ if (isset($_POST['btndeconex'])) {
     setcookie('userFirstname', '', time() - 3600, '/');
     setcookie('userAge', '', time() - 3600, '/');
     setcookie('userMail', '', time() - 3600, '/');
+    setcookie('userPicture', '', time() - 3600, '/');
     setcookie('userGender', '', time() - 3600, '/');
     setcookie('userZipcode', '', time() - 3600, '/');
     setcookie('userSearching', '', time() - 3600, '/');

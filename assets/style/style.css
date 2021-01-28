@@ -147,7 +147,7 @@ a {
     padding-right: 20%;
     background-color: rgba(96, 96, 99, 0.7);
     color: white;
-    height : 100vh;
+    min-height: 1300px;
 }
 
 
@@ -163,7 +163,13 @@ a {
     height: 80px;
     width: 180px;
 }
-
+#btnindex{
+    background-color: rgb(163, 31, 31);
+    color: black;
+    height: 80px;
+    width: 180px;
+    
+}
 .buttonContainer {
     display: flex;
     justify-content: center;
@@ -265,4 +271,8 @@ a {
 }
 .card-text{
     height: 80px;
+}
+
+#userProfilePic {
+    max-width:180px;
 }

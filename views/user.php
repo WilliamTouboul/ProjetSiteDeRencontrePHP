@@ -24,43 +24,57 @@
                     </svg></span>
                 <span id="inlineMedia"> <br> </span> <span class="red">H</span>alfway</a>
             </a>
-
         </div>
     </nav>
-
-    <div class="container profilColumn" id="userMainPage">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Vos données : </h2>
-                <div id="userData">
-                    <p><span class="userLineTitle">Nom : </span><span class="userLineInfo"><?= $userLastname ?></span></p>
-                    <p><span class="userLineTitle">Prénom : </span><span class="userLineInfo"><?= $userFirstname ?></span></p>
-                    <p><span class="userLineTitle">Age : </span><span class="userLineInfo"><?= $userAge ?></span></p>
-                    <p><span class="userLineTitle">Genre : </span><span class="userLineInfo"><?= $userGender ?></span></p>
-                    <p><span class="userLineTitle">Adresse Mail : </span><span class="userLineInfo"><?= $userMail ?></span></p>
-                    <p><span class="userLineTitle">Code Postal : </span><span class="userLineInfo"><?= $userZipcode ?></span></p>
-                    <p><span class="userLineTitle">Recherche : </span><span class="userLineInfo"><?= $userSearching ?></span></p>
-                    <p><span class="userLineTitle">Description : </span><span class="userLineInfo"><?= $userDescription ?></span></p>
+    <div>
+        <div class="container profilColumn" id="userMainPage">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Vos données : </h2>
+                    <div id="userData">
+                        <p><span class="userLineTitle">Nom : </span><span class="userLineInfo"><?= $userLastname ?></span></p>
+                        <p><span class="userLineTitle">Prénom : </span><span class="userLineInfo"><?= $userFirstname ?></span></p>
+                        <p><span class="userLineTitle">Age : </span><span class="userLineInfo"><?= $userAge ?></span></p>
+                        <p><span class="userLineTitle">Genre : </span><span class="userLineInfo"><?= $userGender ?></span></p>
+                        <p><span class="userLineTitle">Adresse Mail : </span><span class="userLineInfo"><?= $userMail ?></span></p>
+                        <p><span class="userLineTitle">Code Postal : </span><span class="userLineInfo"><?= $userZipcode ?></span></p>
+                        <p><span class="userLineTitle">Recherche : </span><span class="userLineInfo"><?= $userSearching ?></span></p>
+                        <p><span class="userLineTitle">Description : </span><span class="userLineInfo"><?= $userDescription ?></span></p>
+                    </div>
                 </div>
-
+                <div class="col-md-6">
+                    <p>
+                        <span class="userLineTitle">Image :<br></span>
+                        <span class="userLineInfo">
+                            <img id="userProfilePic" src=" <?= '../' . $userPicture; ?>">
+                        </span>
+                    </p>
+                </div>
             </div>
-        </div>
+       
         <div class="row">
-            <div class="col-md-6 buttonContainer">
+            <div class="col-md-4 buttonContainer">
                 <form method="POST">
                     <button type="submit" id="destroyButton" name="destroyButton" class="btn userBtn">Déconnexion</button>
                 </form>
             </div>
-            <div class="col-md-6 buttonContainer">
+            <div class="col-md-4 buttonContainer">
                 <form>
-                    <button type="button" id="meeticButton" name="meeticButton" id="meeticButton" class="btn userBtn">
+                    <button type="button" id="meeticButton" name="meeticButton" class="btn userBtn">
                         <a id="meeticLink" href="https://www.meetic.fr/" target="_blank">Meetic</a>
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-4 buttonContainer">
+                <form>
+                    <button type="button" id="btnindex" name="btnindex"  class="btn userBtn">
+                        <a id="btnindex" href="index.php" target="_blank">Retouver nos célibataires</a>
                     </button>
                 </form>
             </div>
         </div>
     </div>
-
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
