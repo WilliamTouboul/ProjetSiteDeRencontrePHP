@@ -13,3 +13,8 @@ divArray.forEach(element => {
         }
     })
 });
+window.onload = function() 
+{
+var audio = new Audio('son.mp3');
+audio.play();
+}

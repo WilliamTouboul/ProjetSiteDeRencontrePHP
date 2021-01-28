@@ -164,7 +164,13 @@ a {
     height: 80px;
     width: 180px;
 }
-
+#btnindex{
+    background-color: rgb(163, 31, 31);
+    color: black;
+    height: 80px;
+    width: 180px;
+    
+}
 .buttonContainer {
     display: flex;
     justify-content: center;

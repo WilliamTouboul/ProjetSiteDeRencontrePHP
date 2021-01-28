@@ -51,20 +51,26 @@
                     </p>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-md-6 buttonContainer">
-                    <form method="POST">
-                        <button type="submit" id="destroyButton" name="destroyButton" class="btn userBtn">Déconnexion</button>
-                    </form>
-                </div>
-                <div class="col-md-6 buttonContainer">
-                    <form>
-                        <button type="button" id="meeticButton" name="meeticButton" id="meeticButton" class="btn userBtn">
-                            <a id="meeticLink" href="https://www.meetic.fr/" target="_blank">Meetic</a>
-                        </button>
-                    </form>
-                </div>
+       
+        <div class="row">
+            <div class="col-md-4 buttonContainer">
+                <form method="POST">
+                    <button type="submit" id="destroyButton" name="destroyButton" class="btn userBtn">Déconnexion</button>
+                </form>
+            </div>
+            <div class="col-md-4 buttonContainer">
+                <form>
+                    <button type="button" id="meeticButton" name="meeticButton" class="btn userBtn">
+                        <a id="meeticLink" href="https://www.meetic.fr/" target="_blank">Meetic</a>
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-4 buttonContainer">
+                <form>
+                    <button type="button" id="btnindex" name="btnindex"  class="btn userBtn">
+                        <a id="btnindex" href="../index.php">Retouver nos célibataires</a>
+                    </button>
+                </form>
             </div>
         </div>
     </div>

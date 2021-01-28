@@ -90,10 +90,10 @@ include("..\controllers\lovers_controller.php");
                                 <div> </div>
                                 <label for="message" id="labelmessage">Age : <?= $age; ?> <br> Description : <?= $desc; ?> <br> <strong>Dis lui tout :</strong> </label>
                                 <div class="modal-body">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Votre message" id="floatingTextarea"></textarea>
-                                        <label for="floatingTextarea">Votre message : </label>
-                                    </div>
+                                <div class="form-floating">
+  <textarea class="form-control" placeholder="Dis lui tous" id="floatingTextarea"></textarea>
+  <label for="floatingTextarea">Votre message</label>
+</div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
