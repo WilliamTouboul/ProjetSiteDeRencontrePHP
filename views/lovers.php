@@ -20,14 +20,14 @@ include("..\controllers\lovers_controller.php");
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-     
+
             <a class="navbar-brand" href="../index.php"><span class="red">M</span>eet <br><span class="red">M</span>e
                 <svg xmlns="http://www.w3.org/2000/svg" fill="rgb(163, 31, 31)" width="30" height="30" viewBox="0 0 24 24">
                     <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
                 </svg>
                 <br> <span class="red">H</span>alfway</a>
             </a>
-         
+
             <p id="infolover"> <span id="inlineMedia"> Hello ! <?= $_COOKIE['userFirstname'] ?></span></p>
             <ul id="nav2" class="navbar-nav ms-auto mb-2 mb-lg-0  ">
                 <li> <button id="btnmessage" type="button" class="btn btn-danger position-relative">
@@ -37,10 +37,10 @@ include("..\controllers\lovers_controller.php");
                         <button id="btnprofile" type="button" class="btn btn-danger">Votre profil</button>
                     </a> </li>
                 <li>
-                <span id="inlineMedia">
-                    <form method="POST">
-                        <button type="submit" id="btndeconex" name="btndeconex" class="btn btn-danger">Déconnexion</button>
-                    </form>
+                    <span id="inlineMedia">
+                        <form method="POST">
+                            <button type="submit" id="btndeconex" name="btndeconex" class="btn btn-danger">Déconnexion</button>
+                        </form>
                     </span>
                 </li>
             </ul>
@@ -50,7 +50,7 @@ include("..\controllers\lovers_controller.php");
         <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4">
             <?php
             // le person c'est le compteur et infos c'est la ligne avec la liste des informations
-            
+
             foreach ($TabLovers as $person => $information) {
                 $gendercherch = ($_COOKIE['userSearching']);
                 if ($information['gender'] == $gendercherch) {
@@ -63,11 +63,11 @@ include("..\controllers\lovers_controller.php");
                     $idmodal = "modal$person";
             ?>
                     <div class="col ">
-                        
+
                         <div class="card mx-auto" style="width: 18rem;" data-aos="fade-up">
                             <img src=<?php echo $information['picture'];  ?> height="300" class="card-img-top" alt=<?= "$fsname   $lstname;" ?>>
                             <div class="card-body">
-                                <h5 class="card-title"> <?= $fsname . " " .$lstname ; ?> </h5>
+                                <h5 class="card-title"> <?= $fsname . " " . $lstname; ?> </h5>
                                 <p class="card-text"><?= $desc ?> </p>
                                 <a>
                                     <!-- Button trigger modal -->
@@ -84,15 +84,16 @@ include("..\controllers\lovers_controller.php");
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title w-100 text-center" id="exampleModalLabel "><?=  $fsname . " " .$lstname ; ?> </h5>
+                                    <h5 class="modal-title w-100 text-center" id="exampleModalLabel "><?= $fsname . " " . $lstname; ?> </h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div>  </div>
-                                <label for="message" id="labelmessage">Age : <?=$age;?> <br> Description : <?=$desc;?> <br> <strong>Dis lui tout :</strong> </label>
+                                <div> </div>
+                                <label for="message" id="labelmessage">Age : <?= $age; ?> <br> Description : <?= $desc; ?> <br> <strong>Dis lui tout :</strong> </label>
                                 <div class="modal-body">
-
-                                    <textarea id="message" name="story" rows="5" cols="63">
-                                </textarea>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Votre message" id="floatingTextarea"></textarea>
+                                        <label for="floatingTextarea">Votre message : </label>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>

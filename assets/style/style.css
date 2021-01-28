@@ -266,3 +266,7 @@ a {
 .card-text{
     height: 80px;
 }
+
+#userProfilePic {
+    max-width:180px;
+}
