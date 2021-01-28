@@ -259,3 +259,10 @@ a {
 .footerLink:hover {
     color: rgb(163, 31, 31);
 }
+
+.card{
+    height: 500px
+}
+.card-text{
+    height: 80px;
+}
