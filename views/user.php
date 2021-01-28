@@ -51,23 +51,24 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 buttonContainer">
-                <form method="POST">
-                    <button type="submit" id="destroyButton" name="destroyButton" class="btn userBtn">Déconnexion</button>
-                </form>
-            </div>
-            <div class="col-md-6 buttonContainer">
-                <form>
-                    <button type="button" id="meeticButton" name="meeticButton" id="meeticButton" class="btn userBtn">
-                        <a id="meeticLink" href="https://www.meetic.fr/" target="_blank">Meetic</a>
-                    </button>
-                </form>
+
+            <div class="row">
+                <div class="col-md-6 buttonContainer">
+                    <form method="POST">
+                        <button type="submit" id="destroyButton" name="destroyButton" class="btn userBtn">Déconnexion</button>
+                    </form>
+                </div>
+                <div class="col-md-6 buttonContainer">
+                    <form>
+                        <button type="button" id="meeticButton" name="meeticButton" id="meeticButton" class="btn userBtn">
+                            <a id="meeticLink" href="https://www.meetic.fr/" target="_blank">Meetic</a>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-    </div>
+    
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
