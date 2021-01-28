@@ -25,3 +25,16 @@ if (isset($_POST['destroyButton'])) {
     setcookie('userDescription', '', time() - 3600, '/');
     header('Location: ../index');
 }
+
+if (isset($_POST['btndeconex'])) {
+    setcookie('userLastname', '', time() - 3600, '/');
+    setcookie('userFirstname', '', time() - 3600, '/');
+    setcookie('userAge', '', time() - 3600, '/');
+    setcookie('userMail', '', time() - 3600, '/');
+    setcookie('userGender', '', time() - 3600, '/');
+    setcookie('userZipcode', '', time() - 3600, '/');
+    setcookie('userSearching', '', time() - 3600, '/');
+    setcookie('userDescription', '', time() - 3600, '/');
+    header('Location: ../index');
+
+}

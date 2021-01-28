@@ -32,11 +32,17 @@
                 <li><a href="\views\user.php">
                         <button id="btnprofile" type="button" class="btn btn-danger">Votre profil</button>
                     </a> </li>
-                <li>
-                    <form method="POST">
-                        <button type="submit" id="btndeconex" name="btndeconex" class="btn btn-danger">Déconnexion</button>
-                    </form>
-                </li>
+                <?php if (
+                    isset($_COOKIE['userLastname']) && isset($_COOKIE['userFirstname'])
+                    && isset($_COOKIE['userAge']) && isset($_COOKIE['userGender']) && isset($_COOKIE['userZipcode'])
+                    && isset($_COOKIE['userMail']) && isset($_COOKIE['userSearching']) && isset($_COOKIE['userDescription'])
+                ) { ?>
+                    <li>
+                        <form method="POST">
+                            <button type="submit" id="btndeconex" name="btndeconex" class="btn btn-danger">Déconnexion</button>
+                        </form>
+                    </li>
+                <?php } ?>
             </ul>
         </div>
     </nav>

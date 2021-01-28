@@ -8,7 +8,7 @@ $TabLovers = [
         'gender' => 'femme',
         'zipcode' => '93110',
         'picture' => '\assets\img\mathilde.jpg',
-        'description' => 'jeune femme romatique ........'
+        'description' => 'Jeune femme romantique cherche desesperement l\'ame soeur pour une histoire serieuse'
     ],
     [
         'lastname' => 'Lecoincé',
@@ -17,7 +17,7 @@ $TabLovers = [
         'gender' => 'homme',
         'zipcode' => '75000',
         'picture' => '\assets\img\jerome.jpg',
-        'description' => 'jeune homme un peu timide ........'
+        'description' => 'Timide mais au regard percant j\'attend quelqu\'un pour regarder dans le vide avec moi'
     ],
     [
         'lastname' => 'Nourhene',
@@ -31,11 +31,11 @@ $TabLovers = [
     [
         'lastname' => 'Touboul',
         'firstname' => 'William',
-        'age' => 25,
+        'age' => 29,
         'gender' => 'homme',
         'zipcode' => '76000',
         'picture' => '\assets\img\jerome.jpg',
-        'description' => 'jeune homme zseazzaazeeza ........'
+        'description' => 'nrfuirhgi ugeioger jigtj goi iorgij toij hortjoi hjoirzbyduq'
     ],
     [
         'lastname' => 'Charpentier',
@@ -44,7 +44,7 @@ $TabLovers = [
         'gender' => 'femme',
         'zipcode' => '93786',
         'picture' => '\assets\img\emma.jpg',
-        'description' => 'jeune femme romatique ........'
+        'description' => 'Passioné de boiserie je suis a la recherche du bucheron de mon coeur'
     ],
     [
         'lastname' => 'Varela',
@@ -53,7 +53,7 @@ $TabLovers = [
         'gender' => 'femme',
         'zipcode' => '95000',
         'picture' => '\assets\img\alice.jpg',
-        'description' => 'jeune femme romatique ........'
+        'description' => 'Grande fan de Krav Maga'
     ],
     [
         'lastname' => 'Anwar',
@@ -62,7 +62,7 @@ $TabLovers = [
         'gender' => 'femme',
         'zipcode' => '75015',
         'picture' => '\assets\img\gabrielle.jpg',
-        'description' => 'jeune femme romatique ........'
+        'description' => '#PremierArrivéPremierServi'
     ],
     [
         'lastname' => 'Benali',
@@ -71,7 +71,7 @@ $TabLovers = [
         'gender' => 'femme',
         'zipcode' => '95420',
         'picture' => '\assets\img\yasmine.jpg',
-        'description' => ' ........'
+        'description' => 'Bonjour, venez me parler !'
     ],
     [
         'lastname' => 'Rabah',
@@ -80,7 +80,7 @@ $TabLovers = [
         'gender' => 'femme',
         'zipcode' => '89000',
         'picture' => '\assets\img\sarah.jpg',
-        'description' => 'instagrammeuse youtubeuse qui vends du reve  ........'
+        'description' => 'Instagrammeuse, Youtubeuse, Facebookeuse'
     ],
     [
         'lastname' => 'Lemaire ',

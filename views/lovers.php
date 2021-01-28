@@ -52,6 +52,7 @@ include("..\controllers\lovers_controller.php");
                     $fsname = $information['firstname'];
                     $lstname = $information['lastname'];
                     $desc = $information['description'];
+                    $age = $information['age'];
                     $idmodal = "modal$person";
             ?>
                     <div class="col ">
@@ -66,7 +67,7 @@ include("..\controllers\lovers_controller.php");
                                         Discuter
                                     </button>
                                 </a>
-                                <a id="btnlike" class="btn btn-danger">Like </a>
+                                <a id="btnlike" class="btn btn-danger">Like</a>
                             </div>
                         </div>
                     </div>
@@ -75,10 +76,11 @@ include("..\controllers\lovers_controller.php");
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title w-100 text-center" id="exampleModalLabel "><?= $lstname . " " . $fsname; ?> </h5>
+                                    <h5 class="modal-title w-100 text-center" id="exampleModalLabel "><?=  $fsname . " " .$lstname ; ?> </h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <label for="message" id="labelmessage"><strong>Dis lui tout :</strong> </label>
+                                <div>  </div>
+                                <label for="message" id="labelmessage">Age : <?=$age;?> <br> Description : <?=$desc;?> <br> <strong>Dis lui tout :</strong> </label>
                                 <div class="modal-body">
 
                                     <textarea id="message" name="story" rows="5" cols="63">
@@ -103,7 +105,7 @@ include("..\controllers\lovers_controller.php");
     <?php include("footer.php"); ?>
 
 </body>
-<script src="assets/js/script.js"> </script>
+<script src="../assets/js/script.js"> </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
