@@ -8,6 +8,8 @@ include("..\controllers\lovers_controller.php");
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" <link href="" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link href="..\assets\style\style.css" rel="stylesheet">
     <title>Nos lovers</title>
 </head>
@@ -62,7 +64,7 @@ include("..\controllers\lovers_controller.php");
             ?>
                     <div class="col ">
                         
-                        <div class="card mx-auto" style="width: 18rem;">
+                        <div class="card mx-auto" style="width: 18rem;" data-aos="fade-up">
                             <img src=<?php echo $information['picture'];  ?> height="300" class="card-img-top" alt=<?= "$fsname   $lstname;" ?>>
                             <div class="card-body">
                                 <h5 class="card-title"> <?= $fsname . " " .$lstname ; ?> </h5>
@@ -107,7 +109,12 @@ include("..\controllers\lovers_controller.php");
     </div>
 
     <?php include("footer.php"); ?>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 <script src="../assets/js/script.js"> </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>

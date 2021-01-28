@@ -8,6 +8,7 @@ if (isset($_COOKIE['userLastname']) && isset($_COOKIE['userFirstname']) && isset
     $userZipcode = $_COOKIE['userZipcode'];
     $userSearching = $_COOKIE['userSearching'];
     $userDescription = $_COOKIE['userDescription'];
+    $userPicture = $_COOKIE['userPicture'];
 } else {
     header('Location: ../index');
 }
