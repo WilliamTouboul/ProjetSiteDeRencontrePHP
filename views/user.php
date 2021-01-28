@@ -18,26 +18,13 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a class="navbar-brand" href="../index.php"><span class="red">M</span>eet <br><span class="red">M</span>e
-                <svg xmlns="http://www.w3.org/2000/svg" fill="rgb(163, 31, 31)" width="30" height="30" viewBox="0 0 24 24">
-                    <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
-                </svg>
-                <br> <span class="red">H</span>alfway</a>
+            <a class="navbar-brand" href="../index.php"><span class="red">M</span>eet <span id="inlineMedia"> <br> </span><span class="red">M</span>e
+                <span id="inlineMedia"><svg xmlns="http://www.w3.org/2000/svg" fill="rgb(163, 31, 31)" width="30" height="30" viewBox="0 0 24 24">
+                        <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                    </svg></span>
+                <span id="inlineMedia"> <br> </span> <span class="red">H</span>alfway</a>
             </a>
-            <p id="infolover"> Hello ! <?= $_COOKIE['userFirstname'] ?></p>
-            <ul id="nav2" class="navbar-nav ms-auto mb-2 mb-lg-0  ">
-                <li> <button id="btnmessage" type="button" class="btn btn-danger position-relative">
-                        Message(s)<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+13 <span class="visually-hidden">unread messages</span></span>
-                    </button></li>
-                <li><a href="\views\user.php">
-                        <button id="btnprofile" type="button" class="btn btn-danger">Votre profil</button>
-                    </a> </li>
-                <li>
-                    <form method="POST">
-                        <button type="submit" id="btndeconex" name="btndeconex" class="btn btn-danger">Déconnexion</button>
-                    </form>
-                </li>
-            </ul>
+
         </div>
     </nav>
 
@@ -73,9 +60,8 @@
             </div>
         </div>
     </div>
-<div class="display-block">
-    <?php include("footer.php"); ?>
-    </div>
+
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

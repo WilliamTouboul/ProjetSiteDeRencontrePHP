@@ -8,7 +8,7 @@ include("..\controllers\lovers_controller.php");
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" <link href="" rel="stylesheet">
-    <link href="\assets\style\style.css" rel="stylesheet">
+    <link href="..\assets\style\style.css" rel="stylesheet">
     <title>Nos lovers</title>
 </head>
 
@@ -44,6 +44,7 @@ include("..\controllers\lovers_controller.php");
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <?php
             // le person c'est le compteur et infos c'est la ligne avec la liste des informations
+            
             foreach ($TabLovers as $person => $information) {
                 $gendercherch = ($_COOKIE['userSearching']);
                 if ($information['gender'] == $gendercherch) {
@@ -56,6 +57,7 @@ include("..\controllers\lovers_controller.php");
                     $idmodal = "modal$person";
             ?>
                     <div class="col ">
+                        
                         <div class="card" style="width: 18rem;">
                             <img src=<?php echo $information['picture'];  ?> height="300" class="card-img-top" alt=<?= "$fsname   $lstname;" ?>>
                             <div class="card-body">
@@ -63,7 +65,7 @@ include("..\controllers\lovers_controller.php");
                                 <p class="card-text"><?= $desc ?> </p>
                                 <a>
                                     <!-- Button trigger modal -->
-                                    <button type="button" id="btndiscut" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#<?= $idmodal; ?>">
+                                    <button type="button" id="btndiscut" class="btn btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#<?= $idmodal; ?>">
                                         Discuter
                                     </button>
                                 </a>
@@ -93,12 +95,10 @@ include("..\controllers\lovers_controller.php");
                             </div>
                         </div>
                     </div>
-
             <?php
                 }
             }
             ?>
-
         </div>
     </div>
 

@@ -8,9 +8,10 @@
 
 body {
     font-family: 'Jose';
-    background-image: url('../img/backgroundParis.jpg');
+    background-image: url('../img/backgroundVille.jpg');
+    background-size: cover;
     height: 100vh;
-    background-attachment: fixed;   
+    background-attachment: fixed;
 }
 
 .error {
@@ -38,7 +39,8 @@ body {
 }
 
 #footer {
-    background-color:rgb(158, 158, 185);
+    background-color: #455858;
+    color: white;
 }
 
 ul {
@@ -53,6 +55,62 @@ ul {
     color: rgb(255, 255, 255);
     font-size: 140px;
 }
+
+/* --------------------------- */
+@media (max-width: 640px) {
+
+    #bigTitle {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #indexTitle {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #bigTitleHeart {
+        display: none;
+    }
+
+    #inlineMedia {
+        display: none;
+    }
+
+    #headerHome {
+        text-align: center;
+    }
+
+    .inscriptionColumn {
+
+        background-color: rgba(96, 96, 99, 0.4);
+        color: white;
+    }
+
+    .inputDiv {
+        margin-top: 6px;
+    }
+
+    .inputText {
+        width: 100%;
+    }
+
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #destroyButton,
+    #meeticButton {
+        background-color: rgb(163, 31, 31);
+        color: black;
+    } 
+
+}
+
+/* ------------------------ */
 
 .red {
     color: rgb(163, 31, 31);
@@ -69,11 +127,20 @@ a {
     color: white;
 }
 
+.legalMentionColumn {
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgba(96, 96, 99, 0.7);
+    color: white;
+
+}
+
 .profilColumn {
     padding-left: 20%;
-    padding-right : 20%;
-    background-color : rgba(96, 96, 99, 0.7);
-    color : white;
+    padding-right: 20%;
+    background-color: rgba(96, 96, 99, 0.7);
+    color: white;
+    height : 100vh;
 }
 
 
@@ -112,7 +179,9 @@ a {
     background-color: rgb(163, 31, 31);
     margin-left: 30px;
 }
-#btnmessage,#btnprofile{
+
+#btnmessage,
+#btnprofile {
     background-color: rgb(163, 31, 31);
     margin-right: 30px;
 }
@@ -127,35 +196,59 @@ a {
     margin-right: 182px;
     ;
 }
-#idnav{
-    background-color:rgb(158, 158, 185);
-  padding-top: 0px;
-  padding-bottom: 0px;
- 
+
+#idnav {
+    background-color: #455858;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
 }
-.navbar-brand{
+
+.navbar-brand {
     text-decoration: none;
     margin-left: 120px;
     color: white;
 }
-#infolover{
+
+#infolover {
     margin-top: 18px;
     margin-left: 120px;
     font-size: xx-large;
     color: white;
 }
 
-#meeticButton, #meeticLink {
-    text-decoration : none;
-    color : black;
+#meeticButton,
+#meeticLink {
+    text-decoration: none;
+    color: black;
 }
 
 .userLineTitle {
     text-align: left;
-    font-style : italic;
-    font-size : 20px;
+    font-style: italic;
+    font-size: 20px;
 }
+
 .userLineInfo {
-    text-align : right;
-    font-size : 20px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.wtLegalMentionsPropName {
+    font-weight: bold;
+
+}
+
+.card {
+    height: 520px;
+
+}
+
+.footerLink {
+    text-decoration: none;
+    color: white;
+}
+
+.footerLink:hover {
+    color: rgb(163, 31, 31);
 }
