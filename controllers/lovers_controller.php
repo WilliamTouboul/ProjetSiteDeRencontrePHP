@@ -26,7 +26,7 @@ $TabLovers = [
         'gender' => 'femme',
         'zipcode' => '76460',
         'picture' => '\assets\img\anais.jpeg',
-        'description' => 'Femme sensible, emotive qui a le coeur sur les main  '
+        'description' => 'Femme sensible, emotive... J\'ai le coeur sur la main '
     ],
     [
         'lastname' => 'Paul',
@@ -35,7 +35,7 @@ $TabLovers = [
         'gender' => 'homme',
         'zipcode' => '76000',
         'picture' => '\assets\img\william.jpeg',
-        'description' => 'Medecin dentiste, drole , fétard ,'
+        'description' => 'Medecin dentiste, drôle, fétard, astronaute'
     ],
     [
         'lastname' => 'Charpentier',
@@ -80,7 +80,7 @@ $TabLovers = [
         'gender' => 'femme',
         'zipcode' => '89000',
         'picture' => '\assets\img\sarah.jpeg',
-        'description' => 'Instagrammeuse, Youtubeuse, Facebookeuse faut juste aimer d\'etre devant la camera'
+        'description' => 'Instagrammeuse, Youtubeuse, Facebookeuse faut juste aimer etre devant la camera'
     ],
     [
         'lastname' => 'Lemaire ',
@@ -93,12 +93,12 @@ $TabLovers = [
     ],
     [
         'lastname' => 'Lecomte',
-        'firstname' => 'luise',
+        'firstname' => 'Luise',
         'age' => 17,
         'gender' => 'femme',
         'zipcode' => '51020',
         'picture' => '\assets\img\luise.jpeg',
-        'description' => 'a ne pas deranger si vous etes pas serieux  ........'
+        'description' => 'A ne pas déranger si vous n\'êtes pas serieux ...'
     ],
     [
         'lastname' => 'Gauthier',
@@ -107,7 +107,7 @@ $TabLovers = [
         'gender' => 'femme',
         'zipcode' => '32110',
         'picture' => '\assets\img\susane.jpeg',
-        'description' => 'etudiante en medicine pas trop a perdre ........'
+        'description' => 'Étudiante en medicine, je n\'ai pas de temps a perdre.'
     ],
     [
         'lastname' => 'Aliani',
@@ -116,7 +116,7 @@ $TabLovers = [
         'gender' => 'femme',
         'zipcode' => '93420',
         'picture' => '\assets\img\salima.jpg',
-        'description' => 'Makup artiste et le respect avant tout.... '
+        'description' => 'Makup artiste et le respect avant tout... '
     ],
     [
         'lastname' => 'Bernard',
@@ -143,7 +143,7 @@ $TabLovers = [
         'gender' => 'homme',
         'zipcode' => '75130',
         'picture' => '\assets\img\mael.jpeg',
-        'description' => 'j\'aime pas passer du temps a la maison,vec moi ca sera des sortie touts les week-end '
+        'description' => 'j\'aime pas passer du temps a la maison, avec moi ca sera des sorties touts les week-ends '
     ],
     [
         'lastname' => 'Berger',
@@ -181,7 +181,7 @@ $TabLovers = [
         'gender' => 'homme',
         'zipcode' => '75015',
         'picture' => '\assets\img\yanis.jpeg',
-        'description' => 'On ira ou tu voudras quand tu voudras !!!!oui oui avec moi faut aimer joe dassin.'
+        'description' => 'On ira ou tu voudras quand tu voudras ! (!oui oui avec moi faut aimer Joe Dassin.)'
     ],
     [
         'lastname' => 'Gallard',
@@ -190,7 +190,7 @@ $TabLovers = [
         'gender' => 'homme',
         'zipcode' => '95110',
         'picture' => '\assets\img\paul.jpeg',
-        'description' => 'un vieu qui refuse d\'assumer son age hahaha Mais voila j\'adore rigoler'
+        'description' => 'D\'aucuns ont des aventures, Je suis une aventure.'
     ],
     [
         'lastname' => 'Lecomte',

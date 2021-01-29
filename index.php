@@ -73,7 +73,7 @@
                             <option value="">-- Choisissez --</option>
                             <option value="homme">Homme</option>
                             <option value="femme">Femme</option>
-                            <option value="Autre">Autres</option>
+                            <option value="Autre">Non-binaire</option>
                         </select>
                         <span class="error"> <?= $genderError; ?> </span>
                     </div>

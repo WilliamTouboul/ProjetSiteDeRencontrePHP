@@ -22,7 +22,7 @@
                 <span id="inlineMedia"> <br> </span> <span class="red">H</span>alfway</a>
         </div>
     </section>
-    <div class="text-center mb-3">
+    <div class="text-center mb-3" id="qr">
         <a href='https://www.unitag.io/qrcode'>
             <img src='https://www.unitag.io/qreator/generate?crs=Ppv8rOENN3V1lAwTz82zPpEYgrTpeQPpAxSJGcmyf1zqoOPAufHCjI4ccbj8leQIffpWitL50YSc%252FcPVAqhvQcY8L%252ByEXXE2GKn8SsxpZk6AmTqPHB%252BJPC6Lunq8ZAfTIHqmQBfAcCr4602bwiImlkTmljMFfwt%252BneqzQPkYT6ilL6QORHBXSBDPnKdu1uVV&crd=fhOysE0g3Bah%252BuqXA7NPQ87MoHrnzb%252BauJLKoOEbJsoOWnYbf2Q9vlh57LDev4a2vJahoQfqJcUPYKz0hWXG3g%253D%253D' alt='QR Code' />
         </a>
