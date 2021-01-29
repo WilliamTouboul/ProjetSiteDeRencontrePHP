@@ -152,7 +152,7 @@ $TabLovers = [
         'gender' => 'homme',
         'zipcode' => '93420',
         'picture' => '\assets\img\ethan.jpg',
-        'description' => 'On n\'a qu\'une vie autant d\'en profiter'
+        'description' => 'YOU\'RE BREATHTAKING'
     ],
     [
         'lastname' => 'Colin',

@@ -12,7 +12,7 @@
         <div class="col-md-6 text-center">
             <h4>Nous contacter</h4>
             <ul>
-                <li><a class="footerLink" href="https://www.meetic.fr/" target="_blank">La concurrence</a></li>
+                <li><a class="footerLink" href="../views/qr.php" target="_blank">QR</a></li>
                 <li><a class="footerLink"  href="http://projetphpsiterencontre/views/legalmention" target="_blank">Mentions légales</a></li>
                 <li><a class="footerLink"  href="tel:+33659406561" target="_blank">Telephone</li>
             </ul>
