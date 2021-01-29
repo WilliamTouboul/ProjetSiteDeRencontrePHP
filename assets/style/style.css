@@ -198,7 +198,8 @@ a {
 }
 
 #btnmessage,
-#btnprofile {
+#btnprofile,
+#btnallovers {
     background-color: rgb(163, 31, 31);
     margin-right: 30px;
 }

@@ -30,6 +30,13 @@ include("..\controllers\lovers_controller.php");
 
             <p id="infolover"> <span id="inlineMedia"> Hello ! <?= $_COOKIE['userFirstname'] ?></span></p>
             <ul id="nav2" class="navbar-nav ms-auto mb-2 mb-lg-0  ">
+            <li>
+                    <span id="alllovers">
+                        <form method="POST">
+                            <button type="submit" id="btnallovers" name="btnallovers" class="btn btn-danger">Tous nos célibataires</button>
+                        </form>
+                    </span>
+                </li>
                 <li> <button id="btnmessage" type="button" class="btn btn-danger position-relative">
                         Message(s)<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+13 <span class="visually-hidden">unread messages</span></span>
                     </button></li>
@@ -50,11 +57,66 @@ include("..\controllers\lovers_controller.php");
         <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4">
             <?php
             // le person c'est le compteur et infos c'est la ligne avec la liste des informations
+            if(isset($_POST['btnallovers'])){
+                foreach ($TabLovers as $person => $information) {
+                    $fsname = $information['firstname'];
+                    $lstname = $information['lastname'];
+                    $desc = $information['description'];
+                    $age = $information['age'];
+                    $idmodal = "modal$person";
+            ?>
+                    <div class="col ">
 
+                        <div class="card mx-auto" style="width: 18rem;" data-aos="fade-up">
+                            <img src=<?php echo $information['picture'];  ?> height="300" class="card-img-top" alt=<?= "$fsname   $lstname;" ?>>
+                            <div class="card-body">
+                                <h5 class="card-title"> <?= $fsname . " " . $lstname; ?> </h5>
+                                <p class="card-text"><?= $desc ?> </p>
+                                <a>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" id="btndiscut" class="btn btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#<?= $idmodal; ?>">
+                                        Discuter
+                                    </button>
+                                </a>
+                                <a id="btnlike" class="btn btn-danger">Like</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal  discussion-->
+                    <div class="modal fade" id="<?= $idmodal; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title w-100 text-center" id="exampleModalLabel "><?= $fsname . " " . $lstname; ?> </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div> </div>
+                                <label for="message" id="labelmessage">Age : <?= $age; ?> <br> Description : <?= $desc; ?> <br> <strong>Dis lui tout :</strong> </label>
+                                <div class="modal-body">
+                                <div class="form-floating">
+  <textarea class="form-control" placeholder="Dis lui tous" id="floatingTextarea"></textarea>
+  <label for="floatingTextarea">Votre message</label>
+</div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Envoyer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+         <?php  }  }
+            else {
+
+            
             foreach ($TabLovers as $person => $information) {
-                $gendercherch = ($_COOKIE['userSearching']);
-                if ($information['gender'] == $gendercherch) {
 
+                $gendercherch = ($_COOKIE['userSearching']);
+                
+                
+
+                
+                if ($information['gender'] == $gendercherch) {
 
                     $fsname = $information['firstname'];
                     $lstname = $information['lastname'];
@@ -103,6 +165,7 @@ include("..\controllers\lovers_controller.php");
                         </div>
                     </div>
             <?php
+            }
                 }
             }
             ?>

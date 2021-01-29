@@ -23,9 +23,7 @@
         </div>
     </section>
     <div class="text-center mb-3" id="qr">
-        <a href='https://www.unitag.io/qrcode'>
-            <img src='https://www.unitag.io/qreator/generate?crs=Ppv8rOENN3V1lAwTz82zPpEYgrTpeQPpAxSJGcmyf1zqoOPAufHCjI4ccbj8leQIffpWitL50YSc%252FcPVAqhvQcY8L%252ByEXXE2GKn8SsxpZk6AmTqPHB%252BJPC6Lunq8ZAfTIHqmQBfAcCr4602bwiImlkTmljMFfwt%252BneqzQPkYT6ilL6QORHBXSBDPnKdu1uVV&crd=fhOysE0g3Bah%252BuqXA7NPQ87MoHrnzb%252BauJLKoOEbJsoOWnYbf2Q9vlh57LDev4a2vJahoQfqJcUPYKz0hWXG3g%253D%253D' alt='QR Code' />
-        </a>
+    <a href='https://www.unitag.io/qrcode'><img src='https://www.unitag.io/qreator/generate?crs=Ppv8rOENN3V1lAwTz82zPgJCeRt23RLSE9SsU4N%252BrxqX4N9KhizbkATejaCcMBan9jqG%252FxftIvOPi1JF2kaypF4sj01RnWQc0axwhAVZJyMe1mKU7HBAIjalXj%252FYDnBsnWKr1DEB%252B3wjUtEU1K9d%252FGkj4CYA2rMSSHA3mcNYDVoV1Bc%252Fal0pXqwlpBBRhp3N&crd=fhOysE0g3Bah%252BuqXA7NPQ87MoHrnzb%252BauJLKoOEbJsoBTbSe%252Bu4YemnnJNNKM6o%252FzIFMm3YkcerTzsOxZOTDtg%253D%253D' alt='QR Code'/></a>
 
     </div>
     <footer>
